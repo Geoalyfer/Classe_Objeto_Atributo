@@ -1,0 +1,77 @@
+#Definindo a classe
+
+class Pessoa:
+
+## Dentro da classe é preciso escolhe o método construtor. 
+## O type trent é uma dica do construtor como str.
+## O self é uma referência externa ao objeto e se trata de uma convenção.
+## A função dentro de uma classe opera como método.
+    def __init__(self, nome:str ) -> None:
+        pass
+
+# Atributos são variáveis que temos dentro de uma classe. Pode ser chamada de propriedade também.
+class Pessoa:
+    def __init__(self, nome: str) -> None:
+        self.nome = nome
+
+## A partir desta atribuição ao nome, é possível instanciar o objeto.
+  pessoa_1 = Pessoa('João')
+## Então o atributo nome foi instanciado e pode ser acessado
+  pessoa_1.nome
+
+# Novos atributos podem ser adicionados ao método construtor (idade)
+  class Pessoa:
+    def __init__(self, nome: str, idade: int) -> None:
+        self.nome = nome
+        self.idade = idade
+#Então é possível obter o nome e a idade 
+  class Pessoa:
+    def __init__(self, nome: str, idade: int) -> None:
+        self.nome = nome
+        self.idade = idade
+pessoa_1 = Pessoa('João',15)
+print(pessoa_1)
+João
+15
+
+## configurando o retorno da função
+class Pessoa:
+    def __init__(self, nome: str, idade: int) -> None:
+        self.nome = nome
+        self.idade = idade
+
+    def __str__(self) -> str:
+        return 'Classe Pessoa'
+    
+pessoa_1 = Pessoa('Joao',15)
+print(pessoa_1)
+
+## criar um novo retorno da função classe
+    def __init__(self, nome: str, idade: int) -> None:
+        self.nome = nome
+        self.idade = idade
+
+    def andar (self):
+        print ('Andando...')
+
+    def falar(self):
+        print('Falando...')
+
+    def __str__(self) -> str:
+        return 'Classe Pessoa'
+
+  ## Criar novo arquivo para organizar o script
+  from classes import Pessoa
+
+pessoa = Pessoa('Gabriel', 15)
+print(pessoa.nome)
+print(pessoa.idade)
+
+pessoa.andar()
+pessoa.falar()
+
+# Executar no terminal python script.py
+Gabriel
+15
+Andando...
+Falando...
